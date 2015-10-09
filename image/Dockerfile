@@ -9,6 +9,6 @@ RUN \
 
 ADD ./fs /
 
-VOLUME /data
+VOLUME /data/tor
 
 CMD ["start_tor"]
