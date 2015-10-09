@@ -2,6 +2,6 @@ tor:
   image: chpio/tor
   restart: on-failure
   ports:
-    - "127.0.0.1:9005:9050"
+    - "127.0.0.1:9050:9050"
   volumes:
     - "./data:/data"
