@@ -1,0 +1,3 @@
+#!/bin/sh -ex
+
+exec su tor -s /bin/sh -c tor
