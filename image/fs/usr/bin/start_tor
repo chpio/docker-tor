@@ -1,3 +1,9 @@
 #!/bin/sh -ex
 
-exec su tor -s /bin/sh -c tor
+if [ ! -f /data/torrc ]; then
+	cp /opt/torrc /data
+fi
+
+chown tor -R /data
+
+exec su tor -s /bin/sh -c "tor -f /data/torrc"

@@ -8,6 +8,7 @@ RUN \
 	&& rm -rf /var/cache/apk/*
 
 ADD ./fs /
-RUN chown -R tor /etc/tor
+
+VOLUME /data
 
 CMD ["start_tor"]
