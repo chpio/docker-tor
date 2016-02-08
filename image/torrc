@@ -1,5 +1,4 @@
 ClientOnly 1
-ORPort 9001
 SocksPort 0.0.0.0:9050
 ExitPolicy reject *:*
 DataDirectory /data/tor
