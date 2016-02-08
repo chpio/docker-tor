@@ -4,4 +4,4 @@ tor:
   ports:
     - "127.0.0.1:9050:9050"
   volumes:
-    - "./data:/data/tor"
+    - "./data-tor:/data/tor"
