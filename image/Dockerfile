@@ -7,7 +7,8 @@ RUN \
 		--repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
 	&& rm -rf /var/cache/apk/*
 
-ADD ./fs /
+COPY start_tor /usr/bin/
+COPY torrc /opt/
 
 VOLUME /data/tor
 
