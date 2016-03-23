@@ -12,8 +12,8 @@ RUN { \
 }
 
 COPY start_tor /usr/bin/
-COPY torrc /opt/
+COPY torrc /etc/tor/
 
 VOLUME /data/tor
 
-CMD ["start_tor"]
+ENTRYPOINT ["start_tor"]
