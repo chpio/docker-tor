@@ -4,6 +4,6 @@ if [ ! -f /data/tor/torrc ]; then
 	cp /opt/torrc /data/tor
 fi
 
-chown tor -R /data/tor
+chown debian-tor -R /data/tor
 
-exec su tor -s /bin/sh -c "tor -f /data/tor/torrc"
+exec tor -f /data/tor/torrc $@
