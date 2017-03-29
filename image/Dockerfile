@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:jessie-slim
 
 RUN { set -ex; \
 	echo "deb http://deb.torproject.org/torproject.org jessie main" >> /etc/apt/sources.list; \
